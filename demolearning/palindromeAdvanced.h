@@ -4,6 +4,7 @@
 
 /* Prototypes for the functions */
 /* The Palindrome Function */
+
 void palindromeAdvanced();
 
 #endif

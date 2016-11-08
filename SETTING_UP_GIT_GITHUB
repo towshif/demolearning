@@ -1,0 +1,33 @@
+http://michaelcrump.net/using-github-with-visualstudio-code/
+
+Steps:
+1. Create a new Rep on GitHub; Copy the http git link
+
+2. Install Git on Computer 
+
+3. In Bash: Setup Git for the directory / codebase 
+
+git remote add origin https://github.com/mbcrump/SampleProject.git
+git push -u origin master
+
+check  .git/config file
+
+Example: 
+******************************************************
+[core]
+repositoryformatversion = 0
+filemode = true
+bare = false
+logallrefupdates = true
+ignorecase = true
+precomposeunicode = true
+
+[remote "origin"]
+url = <https://github.com/mbcrump/SampleProject.git --------- YOUR GIT REP>
+fetch = +refs/heads/*:refs/remotes/origin/*
+
+[branch "master"]
+remote = origin
+merge = refs/heads/master
+******************************************************
+Now Sync All on VS Code Git extension. 

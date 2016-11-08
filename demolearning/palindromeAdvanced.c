@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "palindromeAdvanced.h"
 
-
 void palindromeAdvanced(){
 int i=0,j=0,p=0;
 int length = 0;
